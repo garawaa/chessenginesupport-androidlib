@@ -1,6 +1,5 @@
 Chess engine support library for Android
-
-###About
+##About
 
 This Android library offers a standardized way for app developers to
 
