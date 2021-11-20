@@ -40,7 +40,7 @@ public class YourEngineProvider extends ChessEngineProvider { }
 The source code of an example engine integration (Stockfish 4) is provided here: https://code.google.com/p/chessenginesupport-androidlib/source/browse/trunk/StockfishChessEngine
 
 # GUI authors: how to support the open exchange format
-Checkout the code from https://chessenginesupport-androidlib.googlecode.com/svn/trunk/ChessEngineSupportLibrary into your workspace
+Checkout the code from https://github.com/garawaa/chessenginesupport-androidlib into your workspace
 Add the ChessEngineSupportLibrary as an Android library to your project (in Eclipse go to the Properties of the project - Android - Add... library)
 use something like: 
 ``` ...
