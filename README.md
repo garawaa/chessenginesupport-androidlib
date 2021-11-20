@@ -39,8 +39,8 @@ import com.kalab.chess.enginesupport.ChessEngineProvider;
 
 public class YourEngineProvider extends ChessEngineProvider { } 
  ```
-* add the file enginelist.xml to your project under res/xml/ for an example file see https://code.google.com/p/chessenginesupport-androidlib/source/browse/trunk/StockfishChessEngine/res/xml/enginelist.xml * make sure your engine looks like a library, e.g. name your engine executable libXXX.so where XXX is the name of your engine * put the engine executables for the various targets under libs/armeabi, libs/armeabi-v7a, libs/x86 * That's it! 
-The source code of an example engine integration (Stockfish 4) is provided here: https://code.google.com/p/chessenginesupport-androidlib/source/browse/trunk/StockfishChessEngine
+* add the file enginelist.xml to your project under res/xml/ for an example file see https://github.com/garawaa/chessenginesupport-androidlib/blob/master/StockfishChessEngine/res/xml/enginelist.xml * make sure your engine looks like a library, e.g. name your engine executable libXXX.so where XXX is the name of your engine * put the engine executables for the various targets under libs/armeabi, libs/armeabi-v7a, libs/x86 * That's it! 
+The source code of an example engine integration (Stockfish 4) is provided here: https://github.com/garawaa/chessenginesupport-androidlib/blob/master/StockfishChessEngine
 
 # GUI authors: how to support the open exchange format
 Checkout the code from https://github.com/garawaa/chessenginesupport-androidlib into your workspace
