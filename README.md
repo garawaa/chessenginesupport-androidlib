@@ -1,4 +1,4 @@
-Chess engine support library for Android
+# Chess engine support library for Android
 
 This Android library offers a standardized way for app developers to
 
@@ -6,7 +6,7 @@ provide chess engines to other chess apps
 
 use provided chess engines in other chess apps
 
-How to provide a chess engine using this library:
+# Engine authors: how to provide a chess engine using this library:
 
 Checkout the code from https://github.com/garawaa/chessenginesupport-androidlib into your workspace
 Add the ChessEngineSupportLibrary as an Android library to your project (in Eclipse go to the Properties of the project - Android - Add... library)
@@ -39,7 +39,7 @@ public class YourEngineProvider extends ChessEngineProvider { }
 * add the file enginelist.xml to your project under res/xml/ for an example file see https://code.google.com/p/chessenginesupport-androidlib/source/browse/trunk/StockfishChessEngine/res/xml/enginelist.xml * make sure your engine looks like a library, e.g. name your engine executable libXXX.so where XXX is the name of your engine * put the engine executables for the various targets under libs/armeabi, libs/armeabi-v7a, libs/x86 * That's it! 
 The source code of an example engine integration (Stockfish 4) is provided here: https://code.google.com/p/chessenginesupport-androidlib/source/browse/trunk/StockfishChessEngine
 
-GUI authors: how to support the open exchange format
+# GUI authors: how to support the open exchange format
 Checkout the code from https://chessenginesupport-androidlib.googlecode.com/svn/trunk/ChessEngineSupportLibrary into your workspace
 Add the ChessEngineSupportLibrary as an Android library to your project (in Eclipse go to the Properties of the project - Android - Add... library)
 use something like: EngineResolver resolver = new EngineResolver(context); List<Engine> engines = resolver.resolveEngines();
