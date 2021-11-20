@@ -43,10 +43,10 @@ public class YourEngineProvider extends ChessEngineProvider { }
 The source code of an example engine integration (Stockfish 4) is provided here: https://github.com/garawaa/chessenginesupport-androidlib/blob/master/StockfishChessEngine
 
 # GUI authors: how to support the open exchange format
-Checkout the code from https://github.com/garawaa/chessenginesupport-androidlib into your workspace
-Add the ChessEngineSupportLibrary as an Android library to your project (in Eclipse go to the Properties of the project - Android - Add... library)
+* Checkout the code from https://github.com/garawaa/chessenginesupport-androidlib into your workspace
+* Add the ChessEngineSupportLibrary as an Android library to your project (in Eclipse go to the Properties of the project - Android - Add... library)
 
-Use something like: 
+* Use something like: 
 ``` ...
 EngineResolver resolver = new EngineResolver(context); 
 List<Engine> engines = resolver.resolveEngines();
@@ -62,7 +62,7 @@ File copiedEngine = firstEngine.copyToFiles(this.getActivity().getContentResolve
 
 The executable flag is already set. Save the engine file name, engine package name and engine version (see getters) in your preferences to check them later if they're current.
 
-To check if the engine you're using is up-to-date use this method: 
+* To check if the engine you're using is up-to-date use this method: 
 ``` ...
 ChessEngineResolver resolver = new ChessEngineResolver(context); 
 int newVersionCode = resolver.ensureEngineVersion(engineFileName, enginePackageName, currentVersionCode, this.getActivity().getFilesDir());
