@@ -7,6 +7,7 @@ provide chess engines to other chess apps
 use provided chess engines in other chess apps
 
 How to provide a chess engine using this library:
+
 Checkout the code from https://github.com/garawaa/chessenginesupport-androidlib into your workspace
 Add the ChessEngineSupportLibrary as an Android library to your project (in Eclipse go to the Properties of the project - Android - Add... library)
 Add the following lines to your AndroidManifest.xml:
