@@ -11,7 +11,6 @@ Checkout the code from https://github.com/garawaa/chessenginesupport-androidlib 
 Add the ChessEngineSupportLibrary as an Android library to your project (in Eclipse go to the Properties of the project - Android - Add... library)
 Add the following lines to your AndroidManifest.xml:
 ``` ...
-
 <application
 ...
     >
