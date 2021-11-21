@@ -11,7 +11,7 @@ This Android library offers a standardized way for app developers to
 * Checkout the code from https://github.com/garawaa/chessenginesupport-androidlib/tree/master/ChessEngineSupportLibrary into your workspace
 * Add the ChessEngineSupportLibrary as an Android library to your project(in Eclipse go to the Properties of the project-> Android-> Add library)
 * Add the following lines to your AndroidManifest.xml:
-``` ...
+```xml
 <application
 ...
     >
@@ -32,7 +32,7 @@ This Android library offers a standardized way for app developers to
 </application>
  ```
 Add YourEngineProvider.java to your project something like: 
-``` ...
+```java
 package your.package.name;
 
 import com.kalab.chess.enginesupport.ChessEngineProvider;
@@ -47,14 +47,14 @@ The source code of an example engine integration (Stockfish 4) is provided here:
 * Add the ChessEngineSupportLibrary as an Android library to your project (in Eclipse go to the Properties of the project - Android - Add... library)
 
 * Use something like: 
-``` ...
+```java
 EngineResolver resolver = new EngineResolver(context); 
 List<Engine> engines = resolver.resolveEngines();
  ```
 Engines is now a list of ChessEngines for the current target. 
 
 You can use: 
-``` ...
+```java
 Engine firstEngine = engines.get(0); 
 File copiedEngine = firstEngine.copyToFiles(this.getActivity().getContentResolver(), this.getActivity().getFilesDir()); 
  ```
@@ -63,7 +63,7 @@ File copiedEngine = firstEngine.copyToFiles(this.getActivity().getContentResolve
 The executable flag is already set. Save the engine file name, engine package name and engine version (see getters) in your preferences to check them later if they're current.
 
 * To check if the engine you're using is up-to-date use this method: 
-``` ...
+```java
 ChessEngineResolver resolver = new ChessEngineResolver(context); 
 int newVersionCode = resolver.ensureEngineVersion(engineFileName, enginePackageName, currentVersionCode, this.getActivity().getFilesDir());
  ```
